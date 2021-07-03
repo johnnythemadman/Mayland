@@ -6,9 +6,6 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D body;
 
     private Vector2 movement;
-    private Vector2 mousePos;
-
-    public Camera camera;
 
     // Awake is called when the script instance is being loaded
     // Init all dependencies
@@ -38,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         var moveX = Input.GetAxisRaw("Horizontal");
         var moveY = Input.GetAxisRaw("Vertical");
         movement = new Vector2(moveX, moveY).normalized;
-        mousePos = camera.ScreenToWorldPoint(Input.mousePosition);
+        // dummy
     }
 
     void FixedUpdate()
