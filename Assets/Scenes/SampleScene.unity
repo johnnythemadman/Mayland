@@ -156,8 +156,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   body: {fileID: 371676786}
-  something: 0
-  camera: {fileID: 519420031}
+  cam: {fileID: 519420031}
+  firePoint: {fileID: 1637649322}
 --- !u!50 &371676786
 Rigidbody2D:
   serializedVersion: 4
